@@ -1,0 +1,135 @@
+.dashboard-wrapper {
+  margin-left: 220px;
+  padding: 2.6rem 2.7rem 1.7rem 2.7rem;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  transition: background 0.3s;
+}
+@media (max-width: 1000px) {
+  .dashboard-wrapper { margin-left: 0; margin-top: 71px; padding: 1rem 0.4rem; }
+}
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.6rem;
+}
+.dashboard-header h2 {
+  font-size: 2.2em;
+  font-weight: 650;
+  margin: 0 0 0.3em 0;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
+}
+.btn-logout {
+  background: var(--button-bg); color: var(--button-text);
+  border: none;
+  font-size: 1em;
+  font-weight: 550;
+  border-radius: 7px;
+  padding: 0.7em 1.28em;
+  cursor: pointer;
+  transition: background .22s;
+}
+.btn-logout:hover { background: var(--accent, #43a047); }
+.dashboard-content {
+  display: flex;
+  gap: 2.2rem;
+  align-items: flex-start;
+  justify-content: stretch;
+  margin-bottom: 2.1rem;
+  flex-wrap: wrap;
+}
+.dashboard-section {
+  flex: 1 1 280px;
+  margin-bottom: 1.1rem;
+  background: var(--bg-secondary);
+  padding: 1.55rem 1.3rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.08);
+  min-width: 270px;
+  color: var(--text-primary);
+}
+.dashboard-section h3 {
+  margin: 0 0 1.2em 0; font-size: 1.07em; letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.flex2 { flex: 2 1 420px; }
+.flex1 { flex: 1 1 230px; }
+.portfolio-table, .pnl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98em;
+  min-width: 340px;
+}
+.portfolio-table th, .portfolio-table td,
+.pnl-table th, .pnl-table td {
+  padding: 0.55em 0.7em;
+  text-align: center;
+}
+.portfolio-table th, .pnl-table th {
+  color: var(--text-secondary);
+  border-bottom: 1.5px solid var(--border-color);
+  font-size: 1.03em;
+}
+.portfolio-table tbody tr, .pnl-table tbody tr {
+  transition: background 0.14s;
+}
+.portfolio-table tbody tr:hover, .pnl-table tbody tr:hover {
+  background: var(--border-color);
+}
+.portfolio-table td, .pnl-table td {
+  border-bottom: 1px solid var(--border-color);
+}
+.profit { color: #43a047; font-weight: 600;}
+.loss { color: #ff8360; font-weight: 600;}
+.rec-list {
+  display: flex; flex-direction: column; gap: 1.05em; width: 100%;
+}
+.rec-card {
+  background: var(--bg-primary);
+  box-shadow: 0 1px 12px 0 rgba(0,0,0,0.095);
+  padding: 0.9em 1em;
+  border-radius: 8px;
+  display: flex; flex-direction: column;
+  color: var(--text-primary);
+}
+.rec-symbol {
+  font-size: 1.07em; font-weight: 600;
+}
+.rec-type {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 5px;
+  padding: 0.1em 0.7em;
+  font-size: 0.93em;
+  align-self: flex-start;
+  margin-top: .16em;
+}
+.rec-reason {
+  margin: 0.4em 0 0 0; font-size: .97em; color: var(--text-secondary);
+}
+
+.dashboard-trade-cta {
+  display: flex; gap: 0.9em;
+  margin-top: 2.5rem; justify-content: flex-start;
+}
+.dashboard-trade-btn {
+  background: var(--accent, #43a047);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.83em 1.68em;
+  font-size: 1.05em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.23s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.dashboard-trade-btn:hover { background: var(--button-bg); }
+@media (max-width: 900px) {
+  .dashboard-content { flex-direction: column; gap: 1em; }
+  .dashboard-section,.flex2,.flex1 { min-width: 0; width: 100%; }
+}
