@@ -1,0 +1,4 @@
+{
+    "command": "npm install",
+    "working_directory": "/home/kavia/workspace/code-generation/stock-portfolio-manager-70ec4cdd/stock_portfolio_frontend"
+}
